@@ -16,4 +16,8 @@ To start composed  Docker us command:
 Also PostgreSQL  as  available  via  PGAdmin with  credentials  specified  in `my_docker.yml ` file
 As  soon as  docker  starts  the  Jupiter  is  available  at  http://158.160.33.115:10000/
 
+Password  fot  nootbok is: `admin`
+
+VM: https://console.cloud.yandex.ru/folders/b1gm32g8kdbjk5itlrp7/compute/instance/fhmoon5i8eurq7k5hh7o/overview
+
 
