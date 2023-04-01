@@ -12,7 +12,7 @@ Both Dockers can  communicate to each  other  via  network declared  as `my_net_
 The connection data passed  into Jupiter(first)  notebook via  environment  variables. 
 Storage  of  PostgreSQL data files  redirected  to VM via  `pg_db_data` volume and  `PGDATA` environment  variable.
 
-To start composed  Docker us command: 
+To start composed  Docker use command: 
 
   	`docker compose -f  my_docker.yml up`
 
