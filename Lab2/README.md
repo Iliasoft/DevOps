@@ -9,7 +9,9 @@ This  is  composed  Docker consists from two parts:
 
 
 Both Dockers can  communicate to each  other  via  network  `my_net_bridge` declared  in docker  file.
-The connection properties passed  into Jupyter (first)  notebook via  environment  variables. 
+
+The db connection properties passed  into Jupyter (first)  notebook via  environment  variables. 
+
 Storage  of  PostgreSQL data files  redirected  to VM via  `pg_db_data` volume and  `PGDATA` environment  variable.
 
 To start composed  Docker use command: 
