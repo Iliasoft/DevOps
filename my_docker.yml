@@ -1,0 +1,37 @@
+version: "3"
+services:
+  my_jupyter:
+    image: lab2:latest
+    ports:
+      - "10000:8888"
+    networks:
+      - my_net_bridge
+    volumes:
+      - /opt/lab1/data:/home/jovyan/work/data
+    environment:
+      DB_IP: 158.160.33.115
+      DB_PORT: 5432
+      DB_USER: ad_admin_user
+      DB_PWD: top_secret
+      DB_DBNAME: db_test
+
+
+  my_postgrees:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: "top_secret"
+      POSTGRES_USER: "ad_admin_user"
+      POSTGRES_DB: "db_test"
+      PGDATA: "data/pg_db"
+    networks:
+      - my_net_bridge
+    volumes:
+      - db_data:/data/pg_db
+networks:
+  my_net_bridge: {}
+
+volumes:
+  db_data:
+    name: pg_db_data
