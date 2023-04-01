@@ -2,7 +2,10 @@
 
 This  is  composed  Docker consists from two parts: 
 1. Customized  Jupiter notebook  from lab1 with  `crab_data.ipynb` inside.
+   Image is  `lab2:latest`  available  at  VN 
+   
 2. PostgreSQL database 
+   Image  is `postgres:latest` available  at  internet (and  on VM also)
 
 
 Both Dockers can  communicate to each  other  via  network declared  as `my_net_bridge` in docker  file.
