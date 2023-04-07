@@ -20,7 +20,7 @@ To start composed  Docker use command:
 
 Also PostgreSQL  as  available  via  PGAdmin with  credentials  specified  in `my_docker.yml ` file.
 
-As  soon as  docker  starts  the  Jupyter notebook is  available  at  http://158.160.33.115:10000/
+Running docker is available  at  http://158.160.33.115:10000/
 
 Password  for  notebook is: `admin`
 
