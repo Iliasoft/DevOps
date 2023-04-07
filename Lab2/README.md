@@ -2,7 +2,7 @@
 
 This  is  composed  Docker consists from two parts: 
 1. Customized  Jupyter notebook  from lab1 with  `crab_data.ipynb` inside.
-   Image is  `lab2:latest`  available  at  VN 
+   Image is  `lab2:latest`  available  at  VM
    
 2. PostgreSQL database 
    Image  is `postgres:latest` available  at  internet (and  on VM also)
