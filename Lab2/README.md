@@ -1,29 +1,17 @@
-**Lab2:**
+Lab2:
+You have to spin up a database near your Jupyter container using Docker Compose. 
+This can be any database you want MongoDB or PostgreSQL for example. 
+Using this database you have to store processed data you collected earlier. 
+(You have to extract features yout there and put them in to DB).
+As a result I want to see GitHub repo with all your source code and a working Jupyter instance where I could access your data.
 
-This  is  composed  Docker consists from two parts: 
-1. Customized  Jupyter notebook  from lab1 with  `crab_data.ipynb` inside.
-   Image is  `lab2:latest`  available  at  VM
-   
-2. PostgreSQL database 
-   Image  is `postgres:latest` available  at  internet (and  on VM also)
+VM: eldarov-iv-wm
+Notebook: http://158.160.53.138:10000/lab/tree/work
+Notebook password: see your Telegram
 
+Docker config file with 2 images: /opt/lab1/my_docker.yml
 
-Both Dockers can  communicate to each  other  via  network  `my_net_bridge` declared  in docker  file.
-
-The db connection properties passed  into Jupyter (first)  notebook via  environment  variables. 
-
-Storage  of  PostgreSQL data files  redirected  to VM via  `pg_db_data` volume and  `PGDATA` environment  variable.
-
-To start composed  Docker use command: 
-
-  	`docker compose -f  my_docker.yml up`
-
-Also PostgreSQL  as  available  via  PGAdmin with  credentials  specified  in `my_docker.yml ` file.
-
-Running docker is available  at  http://158.160.33.115:10000/
-
-Password  for  notebook is: `admin`
-
-VM: https://console.cloud.yandex.ru/folders/b1gm32g8kdbjk5itlrp7/compute/instance/fhmoon5i8eurq7k5hh7o/overview
-
-
+it consistst of:
+- Jupyter notebook Lab1.ipynb is in ilias:lab2 image available at VM
+- PostgreSQL database Image is postgres:latest available at internet (and on VM also)
+- their interconnection i.e. shared network, set of shared parameters, dirs for data persistence
