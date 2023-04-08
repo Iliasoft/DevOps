@@ -9,7 +9,7 @@ services:
     volumes:
       - /opt/lab1/data:/home/jovyan/work/data
     environment:
-      DB_IP: 158.160.33.115
+      DB_IP: 158.160.53.138
       DB_PORT: 5432
       DB_USER: ad_admin_user
       DB_PWD: top_secret
