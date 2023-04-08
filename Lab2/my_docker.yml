@@ -1,7 +1,7 @@
 version: "3"
 services:
   my_jupyter:
-    image: lab2:latest
+    image: ilias:lab1
     ports:
       - "10000:8888"
     networks:
@@ -12,7 +12,7 @@ services:
       DB_IP: 158.160.53.138
       DB_PORT: 5432
       DB_USER: ad_admin_user
-      DB_PWD: top_secret
+      DB_PWD: DevOps
       DB_DBNAME: db_test
 
 
@@ -21,7 +21,7 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_PASSWORD: "top_secret"
+      POSTGRES_PASSWORD: "DevOps"
       POSTGRES_USER: "ad_admin_user"
       POSTGRES_DB: "db_test"
       PGDATA: "data/pg_db"
