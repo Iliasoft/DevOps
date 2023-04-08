@@ -6,7 +6,9 @@ Using this database you have to store processed data you collected earlier.
 As a result I want to see GitHub repo with all your source code and a working Jupyter instance where I could access your data.
 
 VM: eldarov-iv-wm
+
 Notebook: http://158.160.53.138:10000/lab/tree/work
+
 Notebook password: see your Telegram
 
 Docker config file with 2 images: /opt/lab1/my_docker.yml
